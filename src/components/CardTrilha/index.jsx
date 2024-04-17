@@ -1,14 +1,16 @@
-import * as PropTypes from "prop-types"; 
-function CardTrilha({dadosTrilha} ){
+import * as PropTypes from "prop-types";
+import "./style.css"
 
+function CardTrilha({dadosTrilha} ){
 
     return(
 
         <>
-
-            <h1> {dadosTrilha.nomeTrilha} </h1>
-            <span> {dadosTrilha.cidade} / {dadosTrilha.estado}</span>
-            <img width="200px" src={dadosTrilha.urlImagem} alt="imagem trilha" /> 
+            <div className="card-container">
+            <img className="card_imagem" width="200px" src={dadosTrilha.urlImagem} alt="imagem trilha" /> 
+                <h1> {dadosTrilha.nomeTrilha} </h1>
+                <span> {dadosTrilha.cidade} / {dadosTrilha.estado}</span>
+            </div>
         
         {/* Recebendo minha props do App */}
         </>
@@ -27,7 +29,7 @@ CardTrilha.propTypes = {
         dificuldade: PropTypes.string.isRequired,
         tipo: PropTypes.string.isRequired,
         nomeUsuario:PropTypes.string.isRequired,
-        urlImagem: PropTypes.string
+        urlImagem: PropTypes.string.isRequired
         
     })
 }

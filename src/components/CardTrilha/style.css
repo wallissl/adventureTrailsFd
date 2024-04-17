@@ -1,0 +1,9 @@
+.card-container{
+    display: flex;
+    height: 10em;
+    box-shadow: .2em .2em .8em black;
+}
+
+.card_imagem{
+    background-position:center;
+}
