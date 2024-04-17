@@ -1,5 +1,6 @@
 import CardTrilha from "./components/CardTrilha"
 
+
 function App(){
 
   const listaTrilhas = [
@@ -7,8 +8,8 @@ function App(){
       nomeTrilha: "Trilha da Costa da Lagoa",
       cidade: "Florianópolis",
       estado: "SC",
-      duracao: "120",
-      trajeto: "4",
+      duracao: 120,
+      trajeto: 4,
       dificuldade:"iniciante",
       tipo:"caminhada / trekking",
       nomeUsuario:"Guilherme André",
