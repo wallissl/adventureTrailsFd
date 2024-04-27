@@ -25,7 +25,7 @@ function App(){
       tipo:"caminhada / trekking",
       nomeUsuario:"Guilherme André",
       urlImagem:"https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    } // É possível duplicar essa lista para trazer diversos cards.
+    } // É possível duplicar essa lista para trazer diversos cards.. Semana 01
   ]
 
   return(
