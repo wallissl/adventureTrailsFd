@@ -1,10 +1,11 @@
 import CardTrilha from "./components/CardTrilha"
 import './App.css'
 import HookUseEffect from "./components/CardTrilha/HookUseEffect"
+import Header from "./components/Header"
 
 function App(){
 
-  const listaTrilhas = [
+  /* const listaTrilhas = [
     {
       nomeTrilha: "Trilha da Costa da Lagoa",
       cidade: "Florianópolis",
@@ -27,12 +28,14 @@ function App(){
       nomeUsuario:"Guilherme André",
       urlImagem:"https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     } // É possível duplicar essa lista para trazer diversos cards.. Semana 01
-  ]
+  ] */
 
   return(
 
     <>
       <div className="container">
+
+        <Header />
         <h1 className="titulo">Explore trilhas incríveis</h1>
         {/* {
           listaTrilhas.map((trilha, index) => (
