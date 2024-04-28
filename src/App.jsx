@@ -47,7 +47,7 @@ function App(){
         }  - Chamando o componenete local */ }
 
 
-        <HookUseEffect />
+        {/* <HookUseEffect /> */}
 
         
 

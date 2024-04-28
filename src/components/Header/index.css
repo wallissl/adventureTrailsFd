@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color: rgb(158, 221, 174);
+    background-color: rgb(90, 148, 104);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -32,4 +32,56 @@ header {
     justify-content: space-around;
     padding-right: 80px;
     list-style: none;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container1, .container2{
+    margin: 35px 30px;
+}
+
+.text1, .text2{
+    margin-top: 20px;;
+}
+
+button{
+    margin-top: 20px;;
+}
+
+.container3{
+    width: 100%;
+    display: flex;
+   
+}
+
+.bl1{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textg{
+    font-size: 25px;
+    width: 65%;
+    margin-top: 30px;
+}
+.bth{
+    display: flex;
+    position:relative;
+    right: 60px;
+}
+
+.bl2{
+    display: flex; 
+    width: 50%;
+}
+
+.imh{
+    width: 250px;
 }
