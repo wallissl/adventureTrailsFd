@@ -44,12 +44,7 @@ function App(){
         {/* {
           listaTrilhas.map((trilha, index) => (
           <CardTrilha dadosTrilha={trilha} key={index} /> ))
-        }  - Chamando o componenete local */ }
-
-
-        {/* <HookUseEffect /> */}
-
-        
+        }  - Chamando o componenete local */ }        
 
       </div>
       

@@ -1,10 +1,12 @@
+import HookUseEffect from "../components/CardTrilha/HookUseEffect"
+
 
 function Trilhas(){
 
     return(
         <>
-        
-        <h1> Trilhas </h1>
+
+        <HookUseEffect /> 
         
         </>
     )

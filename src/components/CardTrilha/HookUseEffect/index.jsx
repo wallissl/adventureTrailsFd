@@ -9,10 +9,10 @@ function HookUseEffect() {
     return(
         <>
         
-        <h1>Teste</h1>
+    
         {users && users.map((use) => (
             <div key={use.nomeTrilha}>
-                <p>{use.nomeTrilha}</p>
+                <p style={{marginTop:'35px'}}>{use.nomeTrilha}</p>
                 <p>{use.cidade}</p>
                 <p>{use.estado}</p>
                 <p>{use.duracao}</p>
