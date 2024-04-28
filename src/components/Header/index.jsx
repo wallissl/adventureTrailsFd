@@ -1,8 +1,7 @@
 import "./index.css"
+import {Link} from "react-router-dom"
 
 function Header(){
-
-
 
 
     return(
@@ -12,20 +11,18 @@ function Header(){
         <header>
 
             <div className="logo">
-                <h3>Adventure Trails FD</h3>
+               <Link to="/"> <h3>Adventure Trails FD</h3> </Link>
             </div>
 
             <div className="menu">
                 <ul>
-                    <li>Explorar Trilhas</li>
-                    <li>Cadastrar Trilhas</li>
+                   <Link to='/Trilhas'><li>Explorar Trilhas</li></Link> 
+                   <Link to="/CadastroTrilhas"><li>Cadastrar Trilhas</li></Link>
                 </ul>
             </div>
 
 
         </header>
-        
-        
         
         </>
 

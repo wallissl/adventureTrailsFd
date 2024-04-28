@@ -2,6 +2,7 @@ import CardTrilha from "./components/CardTrilha"
 import './App.css'
 import HookUseEffect from "./components/CardTrilha/HookUseEffect"
 import Header from "./components/Header"
+import {Outlet} from "react-router-dom"
 
 function App(){
 
@@ -36,13 +37,19 @@ function App(){
       <div className="container">
 
         <Header />
+      
         <h1 className="titulo">Explore trilhas incríveis</h1>
+
+          <Outlet />
         {/* {
           listaTrilhas.map((trilha, index) => (
           <CardTrilha dadosTrilha={trilha} key={index} /> ))
         }  - Chamando o componenete local */ }
 
+
         <HookUseEffect />
+
+        
 
       </div>
       
