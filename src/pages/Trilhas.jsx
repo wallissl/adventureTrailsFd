@@ -9,13 +9,17 @@ function Trilhas(){
     
     return(
         <>
-
-        <HookUseEffect /> 
+       
+        {/* <HookUseEffect />  */}
 
        <div>
             <h1>Explorar Trilhas</h1>
-            {Array.isArray(trilhas) && 
+           {/*  {Array.isArray(trilhas) && 
             trilhas.map((trilha, index) => (
+                <HookUseEffect dadosTrilha={trilha} key={index} />
+            ))} */}
+
+            {!!trilhas && trilhas.map((trilha, index) => (
                 <HookUseEffect dadosTrilha={trilha} key={index} />
             ))}
        </div>

@@ -54,10 +54,6 @@ function App(){
       </div>
       
       {/* dadosTrilha é uma props */}
-
-      
-
-      
     
     </TrilhasContextProvider>
 

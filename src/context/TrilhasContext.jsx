@@ -1,21 +1,23 @@
 
 import { createContext, useEffect, useState } from "react";
-import useFetch from "../Hooks/useFetch";
+import useFetch from "../Hooks/useFetch.jsx";
 
 export const TrilhasContext = createContext();
 
 export const TrilhasContextProvider = ({children}) => {
 
-    const [users] = useFetch("/card.json")
+    const dados = useFetch("/card.json")
     const [trilhas, setTrilhas] = useState([])
 
    /*  const [users] = useFetch("/card.json");/// */
 
     useEffect(() => {
-        if(!!users){
-            setTrilhas(users.trilhas)
-        }
-    },[users]);
+         if(!!dados){
+            setTrilhas(dados)
+            
+        } 
+    },[]);
+   
 
 
     /* const [data, setData] = useState(null);

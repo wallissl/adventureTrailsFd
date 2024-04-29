@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
-import useFetch from "../../../Hooks/useFetch";
+import useFetch from "../../../Hooks/useFetch.jsx";
 
 function HookUseEffect() {
 
     const [users] = useFetch("/card.json");
-
+    
 
     return(
         <>
         
-    
-        {users && users.map((use) => (
+        
+       {/*  {users && users.map((use)=>(<div key={use.name}><p>{use.cidade}</p></div>))} */}
+
+         {users && users.map((use) => (
             <div key={use.nomeTrilha}>
                 <p style={{marginTop:'35px'}}>{use.nomeTrilha}</p>
                 <p>{use.cidade}</p>
@@ -22,7 +24,7 @@ function HookUseEffect() {
                 <p>{use.nomeUsuario}</p>
                 <img width="200px" src={use.urlImagem}></img>
             </div>
-        ))}
+        ))} 
         
         
         
