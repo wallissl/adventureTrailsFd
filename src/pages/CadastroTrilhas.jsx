@@ -5,6 +5,7 @@ function CadastroTrilhas(){
         <>
         
         <h1> Cadastro de Trilhas </h1>
+        <div>Nova Trilha</div>
         
         </>
     )
