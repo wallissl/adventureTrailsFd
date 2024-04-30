@@ -1,0 +1,22 @@
+footer{
+    background: purple;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 60px;
+
+}
+
+.logoF{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.icones{
+    width: 50%;
+}
