@@ -1,31 +1,37 @@
 import HookUseEffect from "../components/CardTrilha/HookUseEffect"
+import CardTrilha from "../components/CardTrilha/index.jsx"
 import { useContext } from "react"
 import { TrilhasContext } from "../context/TrilhasContext"
 
 
+
 function Trilhas(){
 
-    const {trilhas} = useContext(TrilhasContext)
+    const {trilhas, isLoading} = useContext(TrilhasContext)
     
     return(
         <>
-       
-        {/* <HookUseEffect />  */}
 
-       <div>
-            <h1>Explorar Trilhas</h1>
-           {/*  {Array.isArray(trilhas) && 
-            trilhas.map((trilha, index) => (
-                <HookUseEffect dadosTrilha={trilha} key={index} />
-            ))} */}
+        <div>
+                <h1>Explorar Trilhas</h1>
 
-            {!!trilhas && trilhas.map((trilha, index) => (
-                <HookUseEffect dadosTrilha={trilha} key={index} />
-            ))}
-       </div>
-        
-        </>
-    )
-}
+            {Array.isArray(trilhas) && !isLoading ? (
+            <div>
+                {trilhas.map((trilha, index) => (
+                <CardTrilha dadosTrilha={trilha} key={index} />
+                ))} 
+            </div>
+            ) : ( 
+                <span> Não há dados disponíveis </span>
+            )}
+
+        </div>
+         </>
+        )}
+
+        /* {!!trilhas && trilhas.map((trilha, index) => (
+            <HookUseEffect dadosTrilha={trilha} key={index} />
+        ))}
+       </div> */
 
 export default Trilhas
