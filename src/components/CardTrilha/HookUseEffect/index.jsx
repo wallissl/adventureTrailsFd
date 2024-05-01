@@ -3,7 +3,7 @@ import useFetch from "../../../Hooks/useFetch.jsx";
 
 function HookUseEffect() {
 
-    const [users] = useFetch("/card.json");
+    /* const [users] = useFetch("/card.json"); */
     
 
     return(

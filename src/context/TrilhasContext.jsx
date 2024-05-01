@@ -6,18 +6,21 @@ export const TrilhasContext = createContext();
 
 export const TrilhasContextProvider = ({children}) => {
 
-    const dados = useFetch("/card.json")
-    const [trilhas, setTrilhas] = useState([])
+    const [dados, isLoading] = useFetch("/card.json");
+    const [trilhas, setTrilhas] = useState([]);
 
    /*  const [users] = useFetch("/card.json");/// */
 
     useEffect(() => {
-         if(!!dados){
-            setTrilhas(dados)
-            
+         if(!!dados && !isLoading){
+            setTrilhas(dados.trilhasJson)
         } 
-    },[]);
+    },[dados]);
    
+    // V | Contexto formulário | 01:55:00
+    function addTrail(trailData){
+        setTrilhas((t) => [...t, trailData])
+    }
 
 
     /* const [data, setData] = useState(null);
@@ -40,11 +43,8 @@ export const TrilhasContextProvider = ({children}) => {
  */
 
     return(
-        <TrilhasContext.Provider value={{trilhas, setTrilhas}}>
+        <TrilhasContext.Provider value={{trilhas, setTrilhas, isLoading,addTrail}}>
             {children}
         </TrilhasContext.Provider>
     );
-
-
-
 }

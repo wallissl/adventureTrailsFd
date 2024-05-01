@@ -1,5 +1,5 @@
-[
-
+{
+  "trilhasJson": [
     {
       "nomeTrilha": "Trilha da Costa da Lagoa",
       "cidade": "Florianópolis",
@@ -36,3 +36,4 @@
     
     
   ]
+}

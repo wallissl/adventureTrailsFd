@@ -6,11 +6,21 @@ function CardTrilha({dadosTrilha} ){
     return(
 
         <>
-            <div className="card-container">
+            {/* <div className="card-container">
             <img className="card_imagem" width="200px" src={dadosTrilha.urlImagem} alt="imagem trilha" /> 
                 <h1> {dadosTrilha.nomeTrilha} </h1>
                 <span> {dadosTrilha.cidade} / {dadosTrilha.estado}</span>
-            </div>
+            </div> */}
+
+            <p style={{marginTop:'35px'}}>{dadosTrilha.nomeTrilha}</p>
+                <p>{dadosTrilha.cidade}</p>
+                <p>{dadosTrilha.estado}</p>
+                <p>{dadosTrilha.duracao}</p>
+                <p>{dadosTrilha.trajeto}</p>
+                <p>{dadosTrilha.dificuldade}</p>
+                <p>{dadosTrilha.tipo}</p>
+                <p>{dadosTrilha.nomeUsuario}</p>
+                <img width="200px" src={dadosTrilha.urlImagem}></img>
         
         {/* Recebendo minha props do App */}
         </>
